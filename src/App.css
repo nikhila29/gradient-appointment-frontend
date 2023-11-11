@@ -1,5 +1,6 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
+  background-color: #efefef;
 }
 
 .App-logo {
@@ -24,15 +25,165 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.main{
+  display: grid;
+  border: 0.5px solid gainsboro;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header {
+  background-color: #792cf4;
+  height: 70px;
+  text-align: center;
+}
+.header-name{
+  color: white;
+}
+.form{
+  padding: 25px;
+  border: 0.5px solid gainsboro;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.book-appointment{
+  border-radius: 30px;
+  width: 300px;
+  height: 50px;
+  margin-top: 40px;
+  background-color: blue;
+  color: white;
+  font-size: 16px;
+  margin-left: 15px;
+  font-weight: 800;
+  grid-column: 2 / span 2;
+  cursor: pointer;
+}
+.cancel{
+  border-radius: 30px;
+  width: 300px;
+  height: 50px;
+  margin-top: 40px;
+  background-color: red;
+  color: white;
+  font-size: 16px;
+  left: 630px;
+  position: relative;
+  font-weight: 800;
+  grid-column: 2 / span 2;
+  cursor: pointer;
+}
+.table-data {
+  display: grid;
+  justify-content: center;
+ 
+ 
+}
+.card{
+  background-color: white; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  gap: 0;
+  margin-bottom: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  border: 1px solid #ddd;
+  padding: 10px;
+  /* width: 1000px; */
+  height: 60px;
+  
+}
+.table-header{
+  font-size: 20px;
+  font-weight: 500;
+  /* gap: 130px; */
+  margin-bottom: 30px;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.blueButton{
+  background-color: blue;
+  width: 90px;
+  height: 40px;
+  border-radius: 10px;
+  color: white;
+}
+.greenButton{
+  background-color: green;
+  width: 90px;
+  height: 40px;
+  border-radius: 10px;
+  color: white;
+}
+.patient-name, .doctor-name,.contact{
+  font-weight: 500;
+}
+.edit, .delete{
+  width: 90px;
+  height: 40px;
+  border-radius: 10px;
+  /* color: white; */
+  margin-left: 10px;
+  padding: 5px 10px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.edit{
+  background-color: yellow;
+}
+.delete{
+  background-color: red;
+}
+.action{
+  display: flex;
+}
+
+
+.status button {
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.greenButton {
+  background-color: #4caf50;
+  color: white;
+}
+
+.blueButton {
+  background-color: #2196f3;
+  color: white;
+}
+.form label {
+  display: block;
+  margin-bottom: 10px;
+  margin: 10px 16px 10px 10px;
+}
+
+.form .input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  border-radius: 40px;
+  height: 25px;
+  font-size: 20px;
+}
+
+.edit-form {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f3f3f3;
+  border-radius: 4px;
+}
+.modal-buttons{
+  display: flex;
+}
+.modal{
+  margin-bottom: 20px;
+}
+.delete-msg{
+  font-size: 40px;
+  color: green;
 }
